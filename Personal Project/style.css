@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --base-color: #fff;
+    --text-color: #111528;
+    --aside-color: #737373;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
+/** side bar styles **/
+aside {
+    width: 250px;
+    height: 100%;
+    background-color: var(--aside-color);
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+}
+
+.logo-img {
+    margin-left: 20px;
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    position:relative;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.nav-links li {
+    padding: 20px 0;
+}
+
+.nav-links li a {
+    color: fff;
+    text-decoration: none;
+    
+}
+
+.nav-links li a:hover {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/** theme switch button **/
+.darkmode {
+    --base-color: #111528;
+    --text-color: #fff;
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+/** main content styles **/
+main {
+  padding: 40px 60px;
+  position: relative;
+  width: 80%;
+}
+
+#intro, #about, #hobby, #experience{
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 40px 0px;
+    padding: 0% 10%;
+}
+
+#intro .text {
+  display: flex;
+  flex-direction: column; /* Stack h1 and h3 vertically */
+}
+
+h1 {
+    font-weight: 600;
+}
+
+b {
+    font-weight: 900;
+}
+
+h3 {
+    font-weight: normal;
+    margin: 10px 0px;
+}
+
+img {
+    width: 200px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 20px;
+}
+
+#hobby-list-1 li {
+    padding: 5px 0;
+}
+
+#hobby-list-2 {
+    margin-top: 60px;
+}
+
+#hobby-list-2 li {
+    padding: 5px 0;
+}
+
+#experience-list li {
+    padding: 5px 0;
+}
+
+#experience {
+    margin-bottom: 20px;
+}
+
+#experience-img {
+    width: 400px;
+}
+
+#experience .text {
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column; /* Stack h1 and h3 vertically */
+}
